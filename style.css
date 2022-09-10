@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Verdana', sans-serif;
+}
+html{
+  height: 100%;
+}
+
+.css-18ni7ap {
+	background-image: url('https://cdn-icons-png.flaticon.com/512/2041/2041134.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: 80px 80px;
+	background-color: #C7A1E3	;
+  /* #FA8072 */
+	height: 100px;
+}
+
+section {
+	background-color: #C7A1E3	;
+	
+}
+
+footer{
+  background: tomato;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer a{
+  text-decoration: none;
+}
