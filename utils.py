@@ -31,5 +31,5 @@ def findmatches(curr,nominal_features):  # FUNCTION TO RETURN LIST OF RECO IDS C
             Dict[int(t)] = cosine_similarity(curterm,iterm )    #STORE THE KEY-ID AND VALUE-SIMILARITY PAIR IN DICT DICTIONARY
         
         
-    best_matches = nlargest(4, Dict, key = Dict.get)       #PICK OUT TOP 3 MATCHES OF CURR AND STORE IN BEST_MATCHES
+    best_matches = nlargest(6, Dict, key = Dict.get)       #PICK OUT TOP 3 MATCHES OF CURR AND STORE IN BEST_MATCHES
     return best_matches

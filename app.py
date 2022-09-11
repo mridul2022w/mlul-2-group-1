@@ -74,13 +74,13 @@ with st.container():
         
         with col2:
             
-            lst = ['orientation','location','drugs']
+            lst = ['orientation','location','drugs','pets']
             for j in lst:
                 widget = 'option' + str(j)
                 widget = st.selectbox(j.capitalize(),df[j].unique().tolist(),key=widget)
         
         with col3:
-            lst = ['sex','body_type','drinks']
+            lst = ['sex','body_type','drinks','diet']
             for j in lst:
                 widget = 'option' + str(j)
                 widget = st.selectbox(j.capitalize(),df[j].unique().tolist(),key=widget)
@@ -129,6 +129,8 @@ if st.session_state['submit'] == 1:
                              st.write("Drugs: ",df2['drugs'].iloc[i])
                              st.write("Orientation: ",df2['orientation'].iloc[i])
                              st.write("Status: ",df2['status'].iloc[i])
+                             st.write("Pets: ",df2['pets'].iloc[i])
+                             st.write("Diet: ",df2['diet'].iloc[i])
                              st.button("Like",key="firstcardbutton"+str(i),on_click=like_button,args=[df2['id'].iloc[i]])
         with col3:
             if df2.shape[0]:
@@ -141,5 +143,7 @@ if st.session_state['submit'] == 1:
                          st.write("Drugs: ",df2['drugs'].iloc[i])
                          st.write("Orientation: ",df2['orientation'].iloc[i])
                          st.write("Status: ",df2['status'].iloc[i])
+                         st.write("Pets: ",df2['pets'].iloc[i])
+                         st.write("Diet: ",df2['diet'].iloc[i])
                          st.button("Like",key="secondcardbutton"+str(i),on_click=like_button,args=[df2['id'].iloc[i]])
         
